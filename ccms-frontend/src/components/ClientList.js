@@ -36,14 +36,16 @@ const ClientList = ({ refreshTrigger }) => {
     <div>
       {error && <Alert variant="danger">{error}</Alert>}
 
+      {clients.length === 0 ? <Alert variant="info">No client configurations found.</Alert> : null}
+
       <ListGroup>
         {clients.map((client) => (
-          <ListGroup.Item key={client.client_name}>
+          <ListGroup.Item key={client.client_id}>
             <Link to={`/client-config/${client.client_id}`}>{client.client_id}</Link>
             <Button
               variant="danger"
               className="ml-3"
-              onClick={() => handleDelete(client.clien_id)}
+              onClick={() => handleDelete(client.client_id)}
             >
               Delete
             </Button>

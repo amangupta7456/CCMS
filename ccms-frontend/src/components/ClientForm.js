@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button, Form, Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -19,23 +19,7 @@ const ClientForm = ({ clientConfig, onSubmit }) => {
     branding: { logo: '', color: '' },
   });
 
-  useEffect(() => {
-    if (clientConfig) {
-     setFormData({
-        client_id: clientConfig.client_id || '',
-        client_name: clientConfig.client_name || '',
-        language: clientConfig.user_preferences.language || '',
-        timezone: clientConfig.user_preferences.timezone || '',
-        notifications: clientConfig.user_preferences.notifications || { email: false, sms: false },
-        product_name: clientConfig.product_settings.product_name || '',
-        feature_flags: clientConfig.product_settings.feature_flags || { feature1: false, feature2: false },
-        role: clientConfig.access_permissions.role || '',
-        permissions: clientConfig.access_permissions.permissions || [],
-        theme: clientConfig.ui_ux_themes.theme || '',
-        branding: clientConfig.ui_ux_themes.branding || { logo: '', color: '' },
-      }) ;
-    }
-  }, [clientConfig]);
+  
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
