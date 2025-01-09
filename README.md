@@ -1,4 +1,4 @@
-<h1>Guide howto run the project</h1>
+<h1>CCMS all modules installation guide</h1>
 Set Up MongoDB
 Install MongoDB: If you haven't already, you need to set up MongoDB.Use a cloud-managed MongoDB  MongoDB Atlas.
 
