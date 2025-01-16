@@ -2,7 +2,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 
 # MongoDB setup
-MONGODB_URL = "mongodb+srv://amangupta1708aj:password@cluster0.7qmey.mongodb.net/client_config_db"  
+MONGODB_URL = "****************"  
 DATABASE_NAME = "client_config_db"
 COLLECTION_NAME = "client_configurations"
 
