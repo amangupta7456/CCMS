@@ -15,10 +15,10 @@ pip install pydantic<br>
 <br>
 <br>
 This is mongo atlas url<br>
-<a href="https://cloud.mongodb.com/v2/677921906f72a04582ffe71b#/clusters"></a><br>
+[MongoDB_Atlas](https://cloud.mongodb.com/v2/677921906f72a04582ffe71b#/clusters)<br>
 Create a cluster connect it with mongodb compass get the url that it provides for connection String<br>
 Set up mongodb compass in ur laptop <br>
-Copy the url and passwor paste it in connection string <br>
+Copy the url and password paste it in connection string <br>
 It will directly connect it with ur mongodb compass<br<>
 <br>
 <br>
